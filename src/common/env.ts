@@ -9,7 +9,7 @@ export const CONFIG = {
   BREVO_TEMPLATE_NEW_ACCOUNT: process.env.BREVO_TEMPLATE_NEW_ACCOUNT || "4",
   BREVO_TEMPLATE_RESET_PASSWORD:
     process.env.BREVO_TEMPLATE_RESET_PASSWORD || "6",
-  DATABASE_URL: process.env.DATABASE_URL || "postgresql://url",
+  DATABASE_URL: process.env.DATABASE_URL || "",
   GRAPHQL_INSTROSPECTION: process.env.GRAPHQL_INSTROSPECTION || "true",
   JWT_SECRET: process.env.JWT_SECRET || "secret",
   MAILER_BREVO_API_KEY: process.env.MAILER_BREVO_API_KEY || "secret",
@@ -19,7 +19,7 @@ export const CONFIG = {
   PAGE_RESET_PASSWORD_URL:
     process.env.PAGE_RESET_PASSWORD_URL || "/reset-password",
   PAGE_URL: process.env.PAGE_URL || "http://localhost:300",
-  RUN_CRON_JOB: process.env.RUN_CRON_JOB || "true",
+  RUN_CRON_JOB: process.env.RUN_CRON_JOB || "",
   S3_ACCESS_KEY_ID: process.env.S3_ACCESS_KEY_ID || "value",
   S3_BUCKET_NAME: process.env.S3_BUCKET_NAME || "value",
   S3_ENDPOINT: process.env.S3_ENDPOINT || "https://value",
