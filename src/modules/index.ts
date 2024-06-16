@@ -2,13 +2,13 @@ import { Module } from "~/lib/modules/declarations";
 import { authDefinition } from "./auth";
 import { fitbitSubsModule } from "./fitbit-subs";
 import { ServerHealth } from "./health";
-import { postDefiniton } from "./posts";
-import { testDefinition } from "./test";
+import { ServerLogging } from "./logging";
 
 export const moduleDefinitions: Module[] = [
   ServerHealth,
   authDefinition,
-  postDefiniton,
-  testDefinition,
   fitbitSubsModule,
+  // postDefiniton,
+  // testDefinition,
+  ServerLogging,
 ];
