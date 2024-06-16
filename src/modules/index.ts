@@ -12,4 +12,5 @@ export const moduleDefinitions: Module[] = [
   // postDefiniton,
   testDefinition,
   ServerLogging,
+  fitbitSubsModule,
 ];
