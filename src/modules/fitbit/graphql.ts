@@ -26,7 +26,7 @@ fitbitGQLDeclaration.add(
 
       return url.toString();
     },
-  })
+  }),
 );
 
 export { fitbitGQLDeclaration };

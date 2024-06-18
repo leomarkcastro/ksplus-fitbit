@@ -19,7 +19,7 @@ export const FitbitNutritionGet = async (args: {
       headers: {
         Authorization: `Bearer ${tok}`,
       },
-    }
+    },
   );
 
   const token = await tokenRequest.json();

@@ -34,5 +34,9 @@ export const CONFIG = {
     process.env.SESSION_SECRET ||
     '"secretashdasifhjldgjaisjflsjkasldfklaskdjf"',
   LOG_REQUESTS: process.env.LOG_REQUESTS || "short,true",
-  LOG_TODB: process.env.LOG_TODB || "",
+  LOG_TODB: process.env.LOG_TODB || "true",
+  FITBIT_CLIENTID: process.env.FITBIT_CLIENTID || "id",
+  FITBIT_CLIENTSECRET: process.env.FITBIT_CLIENTSECRET || "secret",
+  FITBIT_REDIRECTURI:
+    process.env.FITBIT_REDIRECTURI || "/api/auth/fitbit/redirect",
 };

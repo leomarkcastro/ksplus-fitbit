@@ -29,7 +29,7 @@ fitbitRouteDeclaration.routes.set(
 
       res.status(200).send(token);
     },
-  })
+  }),
 );
 
 fitbitRouteDeclaration.routes.set(
@@ -57,7 +57,7 @@ fitbitRouteDeclaration.routes.set(
 
       res.status(200).send(response);
     },
-  })
+  }),
 );
 
 export { fitbitRouteDeclaration };

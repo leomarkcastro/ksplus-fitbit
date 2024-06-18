@@ -17,7 +17,7 @@ export const FitbitAuthCallback = async (args: {
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
       Authorization: `Basic ${Buffer.from(
-        `${CONFIG.FITBIT_CLIENTID}:${CONFIG.FITBIT_CLIENTSECRET}`
+        `${CONFIG.FITBIT_CLIENTID}:${CONFIG.FITBIT_CLIENTSECRET}`,
       ).toString("base64")}`,
     },
     body: new URLSearchParams({
@@ -40,7 +40,7 @@ export const FitbitRefreshToken = async (args: {
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
       Authorization: `Basic ${Buffer.from(
-        `${CONFIG.FITBIT_CLIENTID}:${CONFIG.FITBIT_CLIENTSECRET}`
+        `${CONFIG.FITBIT_CLIENTID}:${CONFIG.FITBIT_CLIENTSECRET}`,
       ).toString("base64")}`,
     },
     body: new URLSearchParams({
@@ -62,7 +62,7 @@ export const FitbitAuthGenerateLink = (args: {
   url.searchParams.append("client_id", CONFIG.FITBIT_CLIENTID);
   url.searchParams.append(
     "scope",
-    "activity heartrate nutrition profile sleep weight"
+    "activity heartrate nutrition profile sleep weight",
   );
   // url.searchParams.append("code_challenge", codeChallenge);
   // url.searchParams.append("code_challenge_method", "S256");
@@ -85,7 +85,7 @@ export const FitbitAuthGetProfile = async (args: {
       headers: {
         Authorization: `Bearer ${args.accessToken}`,
       },
-    }
+    },
   );
 
   const profile = await profileRequest.json();
@@ -94,7 +94,7 @@ export const FitbitAuthGetProfile = async (args: {
 };
 
 export const FitbitGetAccessToken = async (
-  args: FitbitAuthorizationPayload
+  args: FitbitAuthorizationPayload,
 ): Promise<string> => {
   try {
     await FitbitAuthGetProfile({
