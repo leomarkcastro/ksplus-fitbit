@@ -40,9 +40,7 @@
     "@keystone-6/auth": "^7.0.0",
     "@keystone-6/core": "^5.0.0",
     "@keystone-6/fields-document": "^7.0.0",
-    "@types/jsonwebtoken": "^9.0.6",
-    "@types/node-cron": "^3.0.11",
-    "@types/swagger-ui-express": "^4.1.6",
+    "autoprefixer": "^10.4.19",
     "axios": "^1.6.8",
     "bcrypt": "^5.1.1",
     "concurrently": "^8.2.2",
@@ -56,12 +54,13 @@
     "minio": "^7.1.4",
     "moment": "^2.30.1",
     "moment-timezone": "^0.5.45",
-    "node-cron": "^3.0.3",
+    "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "sib-api-v3-typescript": "^2.2.2",
     "socket.io": "^4.7.5",
     "socket.io-client": "^4.7.5",
     "swagger-ui-express": "^5.0.0",
+    "tailwindcss": "^3.4.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.2",
     "wait-on": "^7.2.0",
@@ -72,12 +71,12 @@
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/express-fileupload": "^1.5.0",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node-cron": "^3.0.11",
     "@types/node-fetch": "^2.6.11",
     "@types/socket.io": "^3.0.2",
-    "autoprefixer": "^10.4.19",
+    "@types/swagger-ui-express": "^4.1.6",
     "husky": "^9.0.11",
-    "nodemon": "^3.1.2",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4"
+    "nodemon": "^3.1.2"
   }
 }
